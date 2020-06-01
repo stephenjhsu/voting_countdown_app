@@ -1,6 +1,6 @@
 from rumps import rumps
 import time
-from datetime import datetime, timedelta, date # temporal objects
+from datetime import datetime, timedelta, date 
 import os
 
 icon_path = "data/rooster-128.png"
