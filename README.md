@@ -12,9 +12,19 @@ By utilizing vote.org, a website that "simplifies political engagement, increase
 
 And having worked in tech as well as a graduate of U.C. Berkeley, I've seen both extreme ends of the high tech world as well as the political world. Often times, these areas are seen as very opposite and separate worlds. That being said, I've always wanted to find a way to merge the two to bring technology and applications to the political domain to promote positive change. While simple, I hope that this tool will help in the upcoming election and serve as a reminder that we all have the power to be the change we want to see in this world - no matter how big or small the change. 
 
-# DOWNLOAD
+## Installation
 
-[Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip)
+You can 
+
+1. Clone the repository and run the .app or build it using py2app
+
+2. [Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip) and then unzip the file and open the .app
+
+## NOTE:
+
+If using the .app, you may need to allow permissions for the application:
+
+System Preferences > Security and Privacy > Open Anyway (for voting_countdown)
 
 
 ## Screenshots
@@ -32,22 +42,6 @@ On election day:
 User Interface:
 
 ![](/images/expanded.jpg)
-
-
-
-## Installation
-
-You can 
-
-1. Clone the repository
-
-2. [Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip) the .dmg by itself or run python voting_countdown.py
-
-## NOTE:
-
-If using the dmg, you may need to allow permissions for the application:
-
-System Preferences > Security and Privacy > Open Anyway (for voting_countdown)
 
 
 ### Requirements 
