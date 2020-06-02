@@ -1,5 +1,5 @@
 from rumps import rumps
-from datetime import datetime, timedelta, date # temporal objects
+from datetime import datetime, timedelta, date
 import webbrowser
 
 icon_path = "data/election.png"
