@@ -55,12 +55,7 @@ User Interface:
 
 ## Questions and Comments 
 
-If you have any questions or suggestions, please don't hesitate to reach us at stephen@inspireai.io
-
-## Credits:
-
-Rumps (https://github.com/jaredks/rumps)
-
-Timeglass (for inspiration) (https://github.com/mountwebs/timeglass/blob/master/timeglass.py)
+If you have any questions or suggestions, please don't hesitate
+to reach us at stephen@inspireai.io
 
 Thank you!
