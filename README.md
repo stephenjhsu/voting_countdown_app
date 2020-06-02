@@ -4,7 +4,7 @@
 
 “Somewhere inside of all of us is the power to change the world.” -Roald Dahl
 
-The 2020 U.S. Elections are right around the corner. With so many apocalptic and unprecedented events happening, it is now more than ever, important to vote for the future of the United States. 
+The 2020 U.S. Elections are right around the corner. With so many apocalyptic and unprecedented events happening, it is now more than ever, important to vote for the future of the United States. 
 
 
 By utilizing vote.org, a website that "simplifies political engagement, increase voter turnout, and strengthen American democracy," I created a simple Mac toolbar application to show the number of days until the election along with shortcuts to key information such as the nearest polling station, voting ID requirements, and days until the general election. 
