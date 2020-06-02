@@ -12,6 +12,10 @@ By utilizing vote.org, a website that "simplifies political engagement, increase
 
 And having worked in tech as well as a graduate of U.C. Berkeley, I've seen both extreme ends of the high tech world as well as the political world. Often times, these areas are seen as very opposite and separate worlds. That being said, I've always wanted to find a way to merge the two to bring technology and applications to the political domain to promote positive change. While simple, I hope that this tool will help in the upcoming election and serve as a reminder that we all have the power to be the change we want to see in this world - no matter how big or small the change. 
 
+# DOWNLOAD
+
+[Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip)
+
 
 ## Screenshots
 
@@ -37,9 +41,7 @@ You can
 
 1. Clone the repository
 
-2. Download the .dmg by itself or run python voting_countdown.py
-
-[Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip)
+2. [Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip) the .dmg by itself or run python voting_countdown.py
 
 ## NOTE:
 
