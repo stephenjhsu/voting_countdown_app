@@ -8,8 +8,7 @@ class voting(object):
 	def __init__(self):
 		self.icon_path = "data/election.png"
 		self.app = rumps.App("voting", icon=icon_path)
-		#updated hourly
-		self.timer = rumps.Timer(self.ticker, 600) 
+		self.timer = rumps.Timer(self.ticker, 300) 
  
 		self.time_till_election = rumps.MenuItem(title='placeholder')
 		self.app.menu = [self.time_till_election, 
@@ -77,8 +76,6 @@ class voting(object):
 				rumps.MenuItem('Wyoming')
 			]],
 			None,
-			rumps.MenuItem("About Vote.org"),
-			None,
 			rumps.MenuItem("About 2020 Voting Countdown"),
 		]
 		self.timer.count = datetime.now()
@@ -90,18 +87,17 @@ class voting(object):
 		days, seconds = delta.days, delta.seconds
 		hours = seconds // 3600
 		minutes = (seconds % 3600) // 60
-		seconds = seconds % 60
-		if days <= 0:
+		if days == 0:
 			self.app.title = 'Today!'
 			self.time_till_election.title = 'Today is election day!'
+		elif days < 0:
+			self.app.title = '4 years'
+			self.time_till_election.title = 'In 4 years! Thanks for voting!'
 		else:
 			self.time_till_election.title = f'{days} days, {hours} hours until 2020 Election'
 			self.app.title = f'{days}'
-		dt.count += timedelta(seconds=600)  
+		dt.count += timedelta(seconds=300)  
 
-	@rumps.clicked("About Vote.org")
-	def general(sender):
-		os.system("open \"\" https://www.vote.org/about/")
 
 	@rumps.clicked("Am I registred to vote?")
 	def register_checker(sender):
