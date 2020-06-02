@@ -1,16 +1,15 @@
 from rumps import rumps
-import time
-from datetime import datetime, timedelta, date 
+from datetime import datetime, timedelta, date # temporal objects
 import os
 
-icon_path = "data/rooster-128.png"
+icon_path = "data/election.png"
 
 class voting(object):
 	def __init__(self):
-		self.icon_path = "data/rooster-128.png"
+		self.icon_path = "data/election.png"
 		self.app = rumps.App("voting", icon=icon_path)
 		#updated hourly
-		self.timer = rumps.Timer(self.ticker, 3600) 
+		self.timer = rumps.Timer(self.ticker, 600) 
  
 		self.time_till_election = rumps.MenuItem(title='placeholder')
 		self.app.menu = [self.time_till_election, 
@@ -19,7 +18,7 @@ class voting(object):
 			None, 
 			rumps.MenuItem("Register to Vote"),
 			None,
-			rumps.MenuItem("Register to vote by mail"),
+			rumps.MenuItem("Register to Vote by Mail"),
 			None, 
 			rumps.MenuItem("Get Nearest Polling Location"),
 			None,
@@ -78,15 +77,13 @@ class voting(object):
 				rumps.MenuItem('Wyoming')
 			]],
 			None,
-			rumps.MenuItem("Vote.org"),
+			rumps.MenuItem("About Vote.org"),
 			None,
 			rumps.MenuItem("About 2020 Voting Countdown"),
 		]
-
 		self.timer.count = datetime.now()
 		self.timer.end = datetime.strptime('2020-11-03 00:00:00', '%Y-%m-%d %H:%M:%S')
 		self.timer.start()
-
 
 	def ticker(self, dt):
 		delta = dt.end - dt.count
@@ -100,11 +97,11 @@ class voting(object):
 		else:
 			self.time_till_election.title = f'{days} days, {hours} hours until 2020 Election'
 			self.app.title = f'{days}'
-		dt.count += timedelta(seconds=3600)  
+		dt.count += timedelta(seconds=600)  
 
-	@rumps.clicked("Vote.org")
+	@rumps.clicked("About Vote.org")
 	def general(sender):
-		os.system("open \"\" https://www.vote.org/")
+		os.system("open \"\" https://www.vote.org/about/")
 
 	@rumps.clicked("Am I registred to vote?")
 	def register_checker(sender):
@@ -114,7 +111,7 @@ class voting(object):
 	def to_register(sender):
 		os.system("open \"\" https://www.vote.org/register-to-vote/")
 
-	@rumps.clicked("Register to vote by mail")
+	@rumps.clicked("Register to Vote by Mail")
 	def mailin(sender):
 		os.system("open \"\" https://www.vote.org/absentee-ballot/")
 
@@ -122,14 +119,11 @@ class voting(object):
 	def polling(sender):
 		os.system("open \"\" https://www.vote.org/polling-place-locator/")
 
-
 	@rumps.clicked("About 2020 Voting Countdown")
 	def aboutButton(sender):
 		rumps.Window(title="2020 Voting Countdown by Stephen Hsu", 
-			message="Thanks for Voting Countdown! \n \nGithub Source Code can be found at", 
-			#default_text="To use it, just run the app and select the time limit you would like to count down to. You can click the stop button any time.\n\nThe Custom... box will take a variety of input such as '5 minutes' or 'at 4pm' or 'tomorrow' (see https://code.google.com/p/parsedatetime/ for more examples).", 
+			message="Thanks for using Voting Countdown! \nVersion 1.0.0 \n \n \nGithub Source Code can be found at: \n \nhttps://github.com/stephenjhsu/voting_countdown_app \n \n \nIcon Credits: https://www.flaticon.com/authors/freepik \n \n \nView more at: https://inspireai.io/", 
 			icon_path=icon_path).run()
-
 
 	@rumps.clicked("ID Requirements (by State)", "Alabama")
 	def alabama(self): 
@@ -334,7 +328,6 @@ class voting(object):
 	@rumps.clicked("ID Requirements (by State)", "Wyoming")
 	def wyoming(self): 
 	     os.system("open \"\" https://www.vote.org/voter-id-laws/#wyoming") 
-
 
 	def run(self):
 		self.app.run()

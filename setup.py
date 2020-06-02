@@ -7,8 +7,8 @@ OPTIONS = {
     'plist': {
         'LSUIElement': True
     },
-    'packages': ['parsedatetime'],
-    'iconfile': 'data/rooster-128.icns',
+    'packages': ['datetime'],
+    'iconfile': 'data/election.png',
 }
 
 setup(
