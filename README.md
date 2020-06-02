@@ -1,11 +1,33 @@
 # 2020 Voting Countdown Application
 ==========================================================
 
-Visit us at [nodifly.com](https://nodifly.com/)
 
-You know the story - you run the code, head out for lunch, and come back hoping your code finished running without breaking. Nodifly ends this process of guessing and checking when the code finishes.
+“Somewhere inside of all of us is the power to change the world.” -Roald Dahl
 
-Nodifly is a no-frills, software as a service that can be used to notify users via email or text when the code has been completed, errored out, or met any user-defined conditions. Furthermore, Nodifly provides interactive dashboards to analyze slowdowns, breakdowns, and trends within the coding process.
+The 2020 U.S. Elections are right around the corner. With so many apocalptic and unprecedented events happening, it is now more than ever, important to vote for the future of the United States. 
+
+
+By utilizing vote.org, a website that "simplifies political engagement, increase voter turnout, and strengthen American democracy," I created a simple Mac toolbar application to show the number of days until the election along with shortcuts to key information such as the nearest polling station, voting ID requirements, and days until the general election. 
+
+
+And having worked in tech as well as being a student at U.C. Berkeley, I've seen both extreme ends of the high tech world as well as the political world. Often times, these areas are seen as very opposite and separate worlds. That being said, I've always wanted to find a way to merge the two to bring technology and applications to the political domain to promote positive change. While simple, I hope that this tool will help in the upcoming election and serve as a reminder that we all have the power to be the change we want to see in this world - no matter how big or small the change. 
+
+
+## Screenshots
+
+Pre election:
+
+
+
+On election day:
+
+
+
+User Interface:
+
+
+
+
 
 ## Installation
 
@@ -14,15 +36,21 @@ To install the current release:
 Download the .dmg by itself or run python voting_countdown.py
 
 
+## NOTE:
+
+If using the dmg, you may need to allow permissions for the application:
+
+System Preferences > Security and Privacy > Open Anyway (for voting_countdown)
+
+
 ### Requirements 
 
-- Mac OS
-
+- Currently only runs on Mac OS
 
 
 ## Questions and Comments 
 
-We're actively looking to improve and expand Nodifly - if you have any questions or suggestions, please don't hesitate
-to reach us at nodiflycontact@gmail.com 
+If you have any questions or suggestions, please don't hesitate
+to reach us at stephen@inspireai.io
 
 Thank you!
