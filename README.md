@@ -1,4 +1,4 @@
-# 2020 Voting Countdown Application
+# 2020 U.S. Voting Countdown Application
 ==========================================================
 
 
@@ -10,7 +10,7 @@ The 2020 U.S. Elections are right around the corner. With so many apocalptic and
 By utilizing vote.org, a website that "simplifies political engagement, increase voter turnout, and strengthen American democracy," I created a simple Mac toolbar application to show the number of days until the election along with shortcuts to key information such as the nearest polling station, voting ID requirements, and days until the general election. 
 
 
-And having worked in tech as well as being a student at U.C. Berkeley, I've seen both extreme ends of the high tech world as well as the political world. Often times, these areas are seen as very opposite and separate worlds. That being said, I've always wanted to find a way to merge the two to bring technology and applications to the political domain to promote positive change. While simple, I hope that this tool will help in the upcoming election and serve as a reminder that we all have the power to be the change we want to see in this world - no matter how big or small the change. 
+And having worked in tech as well as a graduate of U.C. Berkeley, I've seen both extreme ends of the high tech world as well as the political world. Often times, these areas are seen as very opposite and separate worlds. That being said, I've always wanted to find a way to merge the two to bring technology and applications to the political domain to promote positive change. While simple, I hope that this tool will help in the upcoming election and serve as a reminder that we all have the power to be the change we want to see in this world - no matter how big or small the change. 
 
 
 ## Screenshots
@@ -31,9 +31,12 @@ User Interface:
 
 ## Installation
 
-To install the current release: 
+You can 
 
-Download the .dmg by itself or run python voting_countdown.py
+1. Clone the repository
+
+2. Download the .dmg by itself or run python voting_countdown.py
+
 
 
 ## NOTE:

@@ -8,7 +8,7 @@ OPTIONS = {
         'LSUIElement': True
     },
     'packages': ['datetime'],
-    'iconfile': 'data/election.png',
+    'iconfile': 'data/election.icns',
 }
 
 setup(
@@ -17,6 +17,3 @@ setup(
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
 )
-
-
-#ln -s /path/to/lib/libpython3.5m.dylib /path/to/lib/libpython3.5.dylib
