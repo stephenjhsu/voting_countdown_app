@@ -29,6 +29,10 @@ System Preferences > Security and Privacy > Open Anyway (for voting_countdown)
 
 ## Screenshots
 
+Tutorial:
+
+![/images/voting.gif]
+
 Pre election:
 
 ![](/images/pre_election.jpg)
