@@ -17,17 +17,17 @@ And having worked in tech as well as a graduate of U.C. Berkeley, I've seen both
 
 Pre election:
 
-![](/images/pre_election.jpeg)
+![](/images/pre_election.jpg)
 
 
 On election day:
 
-![](/images/election.jpeg)
+![](/images/election.jpg)
 
 
 User Interface:
 
-![](/images/expanded.jpeg)
+![](/images/expanded.jpg)
 
 
 
