@@ -26,6 +26,7 @@ If using the .app, you may need to allow permissions for the application:
 
 System Preferences > Security and Privacy > Open Anyway (for voting_countdown)
 
+![](/images/access.jpg)
 
 ## Screenshots
 
