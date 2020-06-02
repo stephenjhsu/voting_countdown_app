@@ -39,7 +39,7 @@ You can
 
 2. Download the .dmg by itself or run python voting_countdown.py
 
-![Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip)
+[Download](https://github.com/stephenjhsu/voting_countdown_app/raw/master/US%20Voting%20Countdown.zip)
 
 ## NOTE:
 
