@@ -22,7 +22,7 @@ Pre election:
 
 On election day:
 
-![](/images/election.jpg)
+![](/images/election_day.jpg)
 
 
 User Interface:
