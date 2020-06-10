@@ -1,5 +1,5 @@
 from rumps import rumps
-from datetime import datetime, timedelta, date # temporal objects
+from datetime import datetime, timedelta, date
 import webbrowser
 
 icon_path = "data/election.png"
@@ -8,7 +8,7 @@ class voting(object):
 	def __init__(self):
 		self.icon_path = "data/election.png"
 		self.app = rumps.App("voting", icon=icon_path)
-		self.timer = rumps.Timer(self.ticker, 300) 
+		self.timer = rumps.Timer(self.ticker, 60) 
  
 		self.time_till_election = rumps.MenuItem(title='placeholder')
 		self.app.menu = [self.time_till_election, 
@@ -77,13 +77,17 @@ class voting(object):
 			]],
 			None,
 			rumps.MenuItem("About 2020 Voting Countdown"),
+			None, 
+			rumps.MenuItem("Refresh")
 		]
 		self.timer.count = datetime.now()
 		self.timer.end = datetime.strptime('2020-11-03 00:00:00', '%Y-%m-%d %H:%M:%S')
 		self.timer.start()
 
 	def ticker(self, dt):
-		delta = dt.end - dt.count
+		end = datetime.strptime('2020-11-03 00:00:00', '%Y-%m-%d %H:%M:%S')
+		current_time = datetime.now()
+		delta = end - current_time
 		days, seconds = delta.days, delta.seconds
 		hours = seconds // 3600
 		minutes = (seconds % 3600) // 60
@@ -94,9 +98,9 @@ class voting(object):
 			self.app.title = '4 years'
 			self.time_till_election.title = 'In 4 years! Thanks for voting!'
 		else:
-			self.time_till_election.title = f'{days} days, {hours} hours until 2020 Election'
+			self.time_till_election.title = f'{days} days, {hours} hours and {minutes} minutes until 2020 Election'
 			self.app.title = f'{days}'
-		dt.count += timedelta(seconds=300)  
+		dt.count += timedelta(seconds=60)  
 
 
 	@rumps.clicked("Am I registred to vote?")
@@ -325,8 +329,10 @@ class voting(object):
 	def wyoming(self): 
 	     webbrowser.open("https://www.vote.org/voter-id-laws/#wyoming") 
 
+	@rumps.clicked("Refresh")
 	def run(self):
 		self.app.run()
+
 
 if __name__ == '__main__':
 	app = voting()

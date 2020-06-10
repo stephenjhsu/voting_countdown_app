@@ -78,15 +78,15 @@
 	<array/>
 	<key>PyRuntimeLocations</key>
 	<array>
-		<string>@executable_path/../Frameworks/Python.framework/Versions/3.6/Python</string>
+		<string>@executable_path/../Frameworks/libpython3.6.dylib</string>
 	</array>
 	<key>PythonInfoDict</key>
 	<dict>
 		<key>PythonExecutable</key>
-		<string>/Users/shsu/Desktop/environments/timer_venv/bin/python</string>
+		<string>/Users/shsu/Desktop/environments/timer_app_venv/bin/python</string>
 		<key>PythonLongVersion</key>
-		<string>3.6.5 (default, Mar 30 2018, 06:41:53) 
-[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)]</string>
+		<string>3.6.5 |Anaconda, Inc.| (default, Apr 26 2018, 08:42:37) 
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]</string>
 		<key>PythonShortVersion</key>
 		<string>3.6</string>
 		<key>py2app</key>
