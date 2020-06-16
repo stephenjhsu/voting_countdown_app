@@ -13,7 +13,7 @@ class voting(object):
 		self.time_till_election = rumps.MenuItem(title='placeholder')
 		self.app.menu = [self.time_till_election, 
 			None,
-			rumps.MenuItem("Am I registred to vote?"),
+			rumps.MenuItem("Am I registered to vote?"),
 			None, 
 			rumps.MenuItem("Register to Vote"),
 			None,
