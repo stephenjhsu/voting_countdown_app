@@ -103,7 +103,7 @@ class voting(object):
 		dt.count += timedelta(seconds=60)  
 
 
-	@rumps.clicked("Am I registred to vote?")
+	@rumps.clicked("Am I registered to vote?")
 	def register_checker(sender):
 		webbrowser.open("https://www.vote.org/am-i-registered-to-vote/")
 
